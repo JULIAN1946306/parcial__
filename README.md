@@ -24,3 +24,22 @@ Ejecuta el código y sigue las opciones del menú:
 3️⃣ Retirar vehículo
 4️⃣ Ver estadísticas
 5️⃣ Salir
+
+
+mejoras:
+- puede ingresar carro y moto
+- cada vehiculo tiene didtintos precios
+
+herramienta de inteligencia artificial:
+
+ registro = registros[placa]
+        entrada = registro["entrada"]
+        minuto += 1
+        salida = minuto
+        minutos = max(1, salida - entrada)
+        costo = minutos * tarifa[registro["tipo"]]
+        parqueadero = registro["posicion"]
+        mapa[parqueadero[0]][parqueadero[1]] = "p"
+        print(f"vehiculo {placa} retirado con el tiempo: {minutos} min y el total a pagar es  de : {costo}")
+        del registros[placa]
+        #del es borrar
